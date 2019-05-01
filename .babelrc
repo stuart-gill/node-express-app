@@ -1,0 +1,5 @@
+{
+  "presets": ["@babel/preset-env"]
+}
+
+//if desired feature isn't working, checking whether a dedicated Babel preset exists
