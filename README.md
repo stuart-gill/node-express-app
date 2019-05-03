@@ -8,7 +8,7 @@
 
 - _The purpose of this program is to provide API endpoints for a messaging app, and rather than using local models, use information from a Postgres database that is locally created._
 - _There are three routes: user, session, and message_
-- _In users, there are API endpoints for get all users and get one user by ID_
+- _In users, there are API endpoints for get all users, and get one user by username, and create user_
 - _In session, there is an endpoint for get current session_
 - _In message, there are endpounts for get all and get by ID; post; and delete_
 

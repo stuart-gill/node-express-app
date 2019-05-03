@@ -43,6 +43,7 @@ const createUsersWithMessages = async () => {
 
       messages: [
         {
+          id: "first seeded message",
           text: "Published the Road to learn React"
         }
       ]
@@ -58,9 +59,11 @@ const createUsersWithMessages = async () => {
       username: "ddavids",
       messages: [
         {
+          id: "second seeded message",
           text: "Happy to release ..."
         },
         {
+          id: "third seeded message",
           text: "Published a complete ..."
         }
       ]

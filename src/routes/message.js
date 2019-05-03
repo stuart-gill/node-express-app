@@ -1,4 +1,5 @@
 import { Router } from "express";
+import uuidv4 from "uuid/v4";
 
 const router = Router();
 
@@ -15,7 +16,9 @@ router.get("/:messageId", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
+  const id = uuidv4();
   const message = await req.context.models.Message.create({
+    id,
     text: req.body.text,
     userId: req.context.me.id
   });
