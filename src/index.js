@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(async (req, res, next) => {
   req.context = {
     models,
-    me: await models.User.findByLogin("rwieruch")
+    me: await models.User.findByLogin("stuartgill")
   };
   next();
 });
@@ -39,12 +39,12 @@ const createUsersWithMessages = async () => {
   await models.User.create(
     {
       id: "7",
-      username: "rwieruch",
+      username: "stuartgill",
 
       messages: [
         {
           id: "first seeded message",
-          text: "Published the Road to learn React"
+          text: "Just finished this killer app"
         }
       ]
     },
@@ -56,15 +56,15 @@ const createUsersWithMessages = async () => {
   await models.User.create(
     {
       id: "9",
-      username: "ddavids",
+      username: "jbuffet",
       messages: [
         {
           id: "second seeded message",
-          text: "Happy to release ..."
+          text: "Plants have feelings too"
         },
         {
           id: "third seeded message",
-          text: "Published a complete ..."
+          text: "What an ignoramous!"
         }
       ]
     },
