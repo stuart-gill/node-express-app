@@ -12,6 +12,9 @@ router.get("/:messageId", async (req, res) => {
   const message = await req.context.models.Message.findByPk(
     req.params.messageId
   );
+  if (!message) {
+    return res.send(404, "sorry, that message does not exist");
+  }
   return res.send(message);
 });
 

@@ -10,6 +10,9 @@ router.get("/", async (req, res) => {
 
 router.get("/:userId", async (req, res) => {
   const user = await req.context.models.User.findByPk(req.params.userId);
+  if (!user) {
+    return res.send(404, "sorry, that user does not exist");
+  }
   return res.send(user);
 });
 
