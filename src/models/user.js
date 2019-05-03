@@ -1,5 +1,10 @@
 const user = (sequelize, DataTypes) => {
   const User = sequelize.define("user", {
+    id: {
+      type: DataTypes.STRING,
+      unique: true,
+      primaryKey: true
+    },
     username: {
       type: DataTypes.STRING,
       unique: true

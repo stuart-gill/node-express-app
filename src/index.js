@@ -34,10 +34,13 @@ sequelize.sync({ force: eraseDatabaseOnSync }).then(async () => {
   );
 });
 
+//seeds the database
 const createUsersWithMessages = async () => {
   await models.User.create(
     {
+      id: "7",
       username: "rwieruch",
+
       messages: [
         {
           text: "Published the Road to learn React"
@@ -51,6 +54,7 @@ const createUsersWithMessages = async () => {
 
   await models.User.create(
     {
+      id: "9",
       username: "ddavids",
       messages: [
         {

@@ -19,12 +19,12 @@
 - _Create a .gitignore file in root and list your .env file_
 - _Create a local Postgres database with pgAdmin or similar_
 - _Run the program with npm start, which will create tables in your database and seed them_
-- _Use a program like Postman to send an API call to http://localhost:3000/message, /user, or /session_
+- _Use a program like Postman or Insomnia to send an API call to http://localhost:3000/message, /user, or /session_
 - _Available API endpoints are listed in specifications above_
 
 ## Support and contact details
 
-_reach Stuart Gill at stuart.a.gill@gmail.com _
+- _reach Stuart Gill at stuart.a.gill@gmail.com_
 
 ## Technologies Used
 
