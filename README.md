@@ -12,8 +12,6 @@
 - _In session, there is an endpoint for get current session_
 - _In message, there are endpounts for get all and get by ID; post; and delete_
 
-## Live Project
-
 ## Setup/Installation Requirements
 
 - _Clone this repository_
